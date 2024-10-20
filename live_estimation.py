@@ -7,6 +7,8 @@ model_dict = pickle.load(open('./my_yoga_model.p', 'rb'))
 model = model_dict['model']
 
 cap = cv2.VideoCapture(0)
+cap.set(3,2000)
+cap.set(4,2000)
 
 mp_pose = mp.solutions.pose
 mp_drawing = mp.solutions.drawing_utils
